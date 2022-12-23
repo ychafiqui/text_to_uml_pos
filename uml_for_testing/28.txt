@@ -1,0 +1,5 @@
+Customers are identified by name and address.
+Each customer has an account, and each account has a balance.
+A savings account offers an interest rate.
+an investment account can buy stocks.
+Stocks are bought at a certain quantity for a certain price (ticker).

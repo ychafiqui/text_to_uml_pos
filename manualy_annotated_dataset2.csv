@@ -1,0 +1,441 @@
+req,pos,labels
+"Each college has a website
+Each college is structured into departments, each of which brings together specific teachers.",DET NOUN VERB DET NOUN SPACE DET NOUN AUX VERB ADP NOUN PUNCT PRON ADP PRON VERB ADV ADJ NOUN PUNCT,O entity relationship O attr O O entity O relationship O entity O O O O relationship O O entity O
+"Among these teachers, one of them is responsible for the department.
+",ADP DET NOUN PUNCT NUM ADP PRON AUX ADJ ADP DET NOUN PUNCT SPACE,O O entity O O O O O relationship O O entity O O
+"A teacher is defined by his surname, first name, phone, email, date of taking office and his index.
+",DET NOUN AUX VERB ADP PRON NOUN PUNCT ADJ NOUN PUNCT NOUN PUNCT NOUN PUNCT NOUN ADP VERB NOUN CCONJ PRON NOUN PUNCT SPACE,O entity O relationship O O attr O O attr O attr O attr O attr O O O O O attr O O
+"Each teacher teaches only one subject.
+",DET NOUN VERB ADV NUM NOUN PUNCT SPACE,O entity relationship O O entity O O
+"Students take several subjects and receive a mark for each of them.
+",NOUN VERB ADJ NOUN CCONJ VERB DET NOUN ADP PRON ADP PRON PUNCT SPACE,entity relationship O entity O O O O O O O O O O
+"For each student, we want to manage his name, first name, phone, email, as well as his year of entry to college.
+",ADP DET NOUN PUNCT PRON VERB PART VERB PRON NOUN PUNCT ADJ NOUN PUNCT NOUN PUNCT NOUN PUNCT ADV ADV ADP PRON NOUN ADP NOUN ADP NOUN PUNCT SPACE,O O entity O O O O O O attr O O attr O attr O attr O O O O O attr O O O entity O O
+"A subject can be taught by several teachers but always takes place in the same classroom (each having a specific number of places).
+",DET NOUN AUX AUX VERB ADP ADJ NOUN CCONJ ADV VERB NOUN ADP DET ADJ NOUN PUNCT PRON VERB DET ADJ NOUN ADP NOUN PUNCT PUNCT SPACE,O entity O O relationship O O entity O O O O O O O entity O O O O O attr O O O O O
+"We want to be able to calculate the average by subject as well as by department
+We also want to calculate the general average of a student and be able to display the subjects in which he has not been noted
+Finally, we must be able to print the data sheet (, first name, phone, email) of a teacher or a student.",PRON VERB PART AUX ADJ PART VERB DET NOUN ADP NOUN ADV ADV ADP ADP NOUN SPACE PRON ADV VERB PART VERB DET ADJ NOUN ADP DET NOUN CCONJ AUX ADJ PART VERB DET NOUN ADP PRON PRON AUX PART AUX VERB SPACE ADV PUNCT PRON AUX AUX ADJ PART VERB DET NOUN NOUN PUNCT PUNCT ADJ NOUN PUNCT NOUN PUNCT NOUN PUNCT ADP DET NOUN CCONJ DET NOUN PUNCT,O O O O O O O O O O entity O O O O entity O O O O O O O O O O O entity O O O O O O entity O O O relationship O O O O O O O O O O O O O O O O O O attr O attr O attr O O O entity O O entity O
+"Consider the following sentences:
+
+A directory contains files
+A room contains walls
+Modems and keyboards are input/output devices
+A stock transaction is a purchase or a sale
+A bank account can belong to a natural or legal person",VERB DET VERB NOUN PUNCT SPACE DET NOUN VERB NOUN SPACE DET NOUN VERB NOUN SPACE PROPN CCONJ NOUN AUX NOUN SYM NOUN NOUN SPACE DET NOUN NOUN AUX DET NOUN CCONJ DET NOUN SPACE DET NOUN NOUN AUX VERB ADP DET ADJ CCONJ ADJ NOUN,O O O O O O O entity relationship entity O O entity relationship entity O entity O entity relationship O O O entity O O O entity relationship O entity O O entity O O O entity O relationship O O entity O entity O
+"Either in a school that performs the following functions:
+Develop catalogs that describe the courses and give the estimated dates of the sessions.
+",CCONJ ADP DET NOUN PRON VERB DET VERB NOUN PUNCT SPACE VERB NOUN PRON VERB DET NOUN CCONJ VERB DET VERB NOUN ADP DET NOUN PUNCT SPACE,O O O O O O O O O O O O O O O O entity O O O O O O O entity O O
+"Register people who wish to participate in the sessions and send them their invitation.
+",PROPN NOUN PRON VERB PART VERB ADP DET NOUN CCONJ VERB PRON PRON NOUN PUNCT SPACE,O entity O O O relationship O O entity O O O O O O O
+Determine the trainers who will lead the sessions.,VERB DET NOUN PRON AUX VERB DET NOUN PUNCT,O O entity O O relationship O entity O
+"Some sessions may be led by individual contractors.
+",DET NOUN AUX AUX VERB ADP ADJ NOUN PUNCT SPACE,O entity O O relationship O O entity O O
+Some courses are organized into sectors.,DET NOUN AUX VERB ADP NOUN PUNCT,O entity O relationship O entity O
+The courses use referenced documents.,DET NOUN VERB VERB NOUN PUNCT,O entity relationship O entity O
+"A person is characterized by his name, his first name, his sex and his age.",DET NOUN AUX VERB ADP PRON NOUN PUNCT PRON ADJ NOUN PUNCT PRON NOUN CCONJ PRON NOUN PUNCT,O entity O O O O attr O O O attr O O attr O O attr O
+"The attributes of the class are private; the name, the first name and the age of the person must be accessible by public operations.",DET NOUN ADP DET NOUN AUX ADJ PUNCT DET NOUN PUNCT DET ADJ NOUN CCONJ DET NOUN ADP DET NOUN AUX AUX ADJ ADP ADJ NOUN PUNCT,O O O O O O O O O attr O O O attr O O attr O O entity O O O O O O O
+"In a university there are different classrooms, offices 
+and departments.",ADP DET NOUN PRON VERB ADJ NOUN PUNCT NOUN SPACE CCONJ NOUN PUNCT,O O entity O O O entity O entity O O entity O
+"A department has a name and it 
+contains many offices.",DET NOUN VERB DET NOUN CCONJ PRON SPACE VERB ADJ NOUN PUNCT,O entity O O attr O O O relationship O entity O
+"A person working at the 
+university has a unique ID and can be a professor or 
+an employee.
+",DET NOUN VERB ADP DET SPACE NOUN VERB DET ADJ NOUN CCONJ AUX AUX DET NOUN CCONJ SPACE DET NOUN PUNCT SPACE,O entity relationship O O O entity O O O attr O O relationship O entity O O O entity O O
+"A professor can be a full, associate or assistant 
+professor and he/she is enrolled in one department.
+",DET NOUN AUX AUX DET ADJ PUNCT NOUN CCONJ NOUN SPACE NOUN CCONJ PRON SYM PRON AUX VERB ADP NUM NOUN PUNCT SPACE,O entity O relationship O entity O entity O entity O entity O O O O O relationship O O entity O O
+"Offices and classrooms have a number ID, and a 
+classroom has a number of seats.
+",NOUN CCONJ NOUN VERB DET NOUN PROPN PUNCT CCONJ DET SPACE NOUN VERB DET NOUN ADP NOUN PUNCT SPACE,entity O entity O O O attr O O O O entity O O O O attr O O
+"Every employee works in an office.
+",DET NOUN VERB ADP DET NOUN PUNCT SPACE,O entity relationship O O entity O O
+"The factory produces several lines of furniture, each with a different name and consisting of several pieces of furniture of different types (beds, tables, chairs, …).",DET NOUN VERB ADJ NOUN ADP NOUN PUNCT PRON ADP DET ADJ NOUN CCONJ VERB ADP ADJ NOUN ADP NOUN ADP ADJ NOUN PUNCT NOUN PUNCT NOUN PUNCT NOUN PUNCT PUNCT PUNCT PUNCT,O O O O entity O O O O O O O attr O relationship O O entity O O O O attr O O O O O O O O O O
+"All furniture pieces have a type, a single reference (eg CC6578) and a selling price.",DET NOUN NOUN VERB DET NOUN PUNCT DET ADJ NOUN PUNCT PROPN PROPN PUNCT CCONJ DET NOUN NOUN PUNCT,O O entity O O attr O O O attr O O O O O O O attr O
+The major competitive advantage of this innovative plant is the fact that each component produced can be used in more than one piece of furniture.,DET ADJ ADJ NOUN ADP DET ADJ NOUN AUX DET NOUN SCONJ DET NOUN VERB AUX AUX VERB ADP ADJ ADP NUM NOUN ADP NOUN PUNCT,O O O O O O O O O O O O O entity O O O O O O O O entity O O O
+Each piece of furniture is thus composed of several components.,DET NOUN ADP NOUN AUX ADV VERB ADP ADJ NOUN PUNCT,O entity O O O O relationship O O entity O
+The same component can be used more than once in the same piece.,DET ADJ NOUN AUX AUX VERB ADJ ADP ADV ADP DET ADJ NOUN PUNCT,O O entity O O O O O O O O O entity O
+"Every type of component produced is assigned a unique numerical code, a manufacturing price and a type (screw, hinge, shelf …).",DET NOUN ADP NOUN VERB AUX VERB DET ADJ PROPN NOUN PUNCT DET NOUN NOUN CCONJ DET NOUN PUNCT PROPN PUNCT NOUN PUNCT NOUN PUNCT PUNCT PUNCT,O attr O entity O O O O O O attr O O O attr O O attr O O O O O O O O O
+The furniture is then sold in various stores throughout the world.,DET NOUN AUX ADV VERB ADP ADJ NOUN ADP DET NOUN PUNCT,O O O O O O O entity O O O O
+Each store has a different address and a fax number.,DET NOUN VERB DET ADJ NOUN CCONJ DET NOUN NOUN PUNCT,O entity O O O attr O O attr attr O
+"To make the manufacturing process more efficient, stores have to place orders everytime they need to replenish their stock.",PART VERB DET NOUN NOUN ADV ADJ PUNCT NOUN VERB PART VERB NOUN NOUN PRON VERB PART VERB PRON NOUN PUNCT,O O O O O O O O entity O O relationship entity O O O O O O O O
+These orders must also be stored in the database.,DET NOUN AUX ADV AUX VERB ADP DET NOUN PUNCT,O entity O O O relationship O O entity O
+"Each order has a order number, a date, the store that placed the order as well as a list of all the ordered furniture and their quantities.",DET NOUN VERB DET NOUN NOUN PUNCT DET NOUN PUNCT DET NOUN PRON VERB DET NOUN ADV ADV ADP DET NOUN ADP DET DET VERB NOUN CCONJ PRON NOUN PUNCT,O entity O O entity attr O O attr O O entity O O O entity O O O O O O O O O O O O O O
+"It should be possible to store the national id number (NIN), tax identification number (TIN), name and address for every client.",PRON AUX AUX ADJ PART VERB DET PROPN PROPN PROPN NOUN PUNCT PROPN PUNCT PUNCT NOUN NOUN NOUN PUNCT PROPN PUNCT PUNCT NOUN CCONJ NOUN ADP DET NOUN PUNCT,O O O O O O O O O O O O O O O attr O O O O O O attr O attr O O entity O
+The NIN and TIN must be different for every client and all clients should have at least a TIN and a name.,DET PROPN CCONJ PROPN AUX AUX ADJ SCONJ DET NOUN CCONJ DET NOUN AUX VERB ADV ADJ DET NOUN CCONJ DET NOUN PUNCT,O O O O O O O O O entity O O O O O O O O O O O attr O
+The database should also contain information about the bicycle models that can be rented-,DET NOUN AUX ADV VERB NOUN ADP DET NOUN NOUN PRON AUX AUX VERB,O O O O O O O O entity O O O O O
+"Each model has an unique name, a type (that can only be road, mountain, bmx or hybrid) and the number of gears.",DET NOUN VERB DET ADJ NOUN PUNCT DET NOUN PUNCT PRON AUX ADV AUX NOUN PUNCT NOUN PUNCT NOUN CCONJ NOUN PUNCT CCONJ DET NOUN ADP NOUN PUNCT,O O O O O attr O O attr O O O O O O O O O O O O O O O O O attr O
+Each bicycle has a unique identifying number and a model.,DET NOUN VERB DET ADJ NOUN NOUN CCONJ DET NOUN PUNCT,O entity O O O O O O O O O
+The company has several different stores where bicycles can be picked up and returned.,DET NOUN VERB ADJ ADJ NOUN SCONJ NOUN AUX AUX VERB ADP CCONJ VERB PUNCT,O O O O O entity O O O O O O O O O
+Each one of these stores is identified by an unique name and has an address (both mandatory).,DET NOUN ADP DET NOUN AUX VERB ADP DET ADJ NOUN CCONJ VERB DET NOUN PUNCT PRON ADJ PUNCT PUNCT,O O O O entity O O O O O attr O O O attr O O O O O
+"When a reservation is made, the following data must be known: which client did the reservation, when will he pick up the bike (day), which bike model he wants and where will he pick up the bike (store).",SCONJ DET NOUN AUX VERB PUNCT DET VERB NOUN AUX AUX VERB PUNCT DET NOUN VERB DET NOUN PUNCT SCONJ AUX PRON VERB ADP DET NOUN PUNCT NOUN PUNCT PUNCT DET NOUN NOUN PRON VERB CCONJ SCONJ AUX PRON VERB ADP DET NOUN PUNCT NOUN PUNCT PUNCT,O O entity O O O O O O O O O O O entity relationship O entity O O O O O O O O O O O O O O O O O O O O O O O O O O O O O
+Consider a company with six factories that builds engine components.,VERB DET NOUN ADP NUM NOUN PRON VERB NOUN NOUN PUNCT,O O O O O entity O O O O O
+"A single factory takes care of the assembly,
+Customers place orders, priority customer places orders first with 20% more of the order.",DET ADJ NOUN VERB NOUN ADP DET NOUN PUNCT SPACE NOUN VERB NOUN PUNCT NOUN NOUN NOUN NOUN ADV ADP NUM NOUN ADJ ADP DET NOUN PUNCT,O O entity O O O O O O O entity relationship entity O O O O entity O O O O O O O O O
+Orders are received by the sales department.,NOUN AUX VERB ADP DET NOUN NOUN PUNCT,entity O O O O entity O O
+If the customer places more than ten orders then he has priority.,SCONJ DET NOUN VERB ADJ ADP NUM NOUN ADV PRON VERB NOUN PUNCT,O O O O O O O entity O O O O O
+"After processing the orders received, the sales department obtains a breakdown of the parts: manufactured parts and subcontracted parts.
+",ADP VERB DET NOUN VERB PUNCT DET NOUN NOUN VERB DET NOUN ADP DET NOUN PUNCT VERB NOUN CCONJ ADJ NOUN PUNCT SPACE,O O O entity O O O entity O O O O O O O O O O O O O O O
+"The sales department can print two types of listings: home listing sent to the factory, and a listing of the subtracted components sent to the stock management department which takes care of the supply of raw materials.",DET NOUN NOUN AUX VERB NUM NOUN ADP NOUN PUNCT NOUN NOUN VERB ADP DET NOUN PUNCT CCONJ DET NOUN ADP DET VERB NOUN VERB ADP DET NOUN NOUN NOUN PRON VERB NOUN ADP DET NOUN ADP ADJ NOUN PUNCT,O entity O O relationship O O O O O O O relationship O O entity O O O O O O entity O relationship O O O entity O O O O O O O O O O O
+Among the tasks also of the sales department is the follow-up of invoicing.,ADP DET NOUN ADV ADP DET NOUN NOUN AUX DET NOUN PUNCT NOUN ADP NOUN PUNCT,O O O O O O entity O O O O O O O O O
+"Or a media library for the borrowing of works by registered customers using a registration form containing their information (name, address, etc.).",CCONJ DET NOUN NOUN ADP DET NOUN ADP NOUN ADP VERB NOUN VERB DET NOUN NOUN VERB PRON NOUN PUNCT NOUN PUNCT NOUN PUNCT X PUNCT PUNCT PUNCT,O O O entity O O relationship O entity O O entity O O O O O O O O O O O O O O O O
+"We have three types of customers, a customer at reduced rates, a customer who subscribes for a year or a customer at a normal rate.",PRON VERB NUM NOUN ADP NOUN PUNCT DET NOUN ADP ADJ NOUN PUNCT DET NOUN PRON VERB ADP DET NOUN CCONJ DET NOUN ADP DET ADJ NOUN PUNCT,O O O O O entity O O entity O O O O O entity O O O O O O O entity O O O O O
+"A customer can borrow different types of work: audio, video or books.",DET NOUN AUX VERB ADJ NOUN ADP NOUN PUNCT ADJ PUNCT NOUN CCONJ NOUN PUNCT,O entity O relationship O O O entity O entity O entity O entity O
+These works are recorded in the media library by a unique code.,DET NOUN AUX VERB ADP DET NOUN NOUN ADP DET ADJ NOUN PUNCT,O entity O relationship O O O entity O O O O O
+"On the other hand, there are documents that the customer cannot borrow, but can only be consulted on site.
+",ADP DET ADJ NOUN PUNCT PRON VERB NOUN PRON DET NOUN AUX PART VERB PUNCT CCONJ AUX ADV AUX VERB ADP NOUN PUNCT SPACE,O O O O O O O O O O entity O O relationship O O O O O O O O O O
+"Each book has a particular type, for example the books have a ""novel"" type, or are of the ""detective"" type, etc.
+",DET NOUN VERB DET ADJ NOUN PUNCT ADP NOUN DET NOUN VERB DET PUNCT ADJ PUNCT NOUN PUNCT CCONJ AUX ADP DET PUNCT NOUN PUNCT NOUN PUNCT X X SPACE,O entity O O O attr O O O O entity O O O O O attr O O O O O O O O attr O O O O
+"After borrowing a book, the librarian creates a borrowing sheet.",ADP VERB DET NOUN PUNCT DET NOUN VERB DET NOUN NOUN PUNCT,O relationship O entity O O O O O relationship O O
+"This sheet must contain the name of the customer, the date of loan and the date of return.",DET NOUN AUX VERB DET NOUN ADP DET NOUN PUNCT DET NOUN ADP NOUN CCONJ DET NOUN ADP NOUN PUNCT,O O O O O O O O entity O O O O O O O O O O O
+"The librarian can add or delete a client or a work.
+",DET NOUN AUX VERB CCONJ VERB DET NOUN CCONJ DET NOUN PUNCT SPACE,O O O O O O O O O O entity O O
+"The borrowing of a document by a client follows certain rules:
+The maximum number of documents to borrow is 5, if it exceeds this number then any new borrowing will be impossible.
+",DET NOUN ADP DET NOUN ADP DET NOUN VERB ADJ NOUN PUNCT SPACE DET ADJ NOUN ADP NOUN PART VERB AUX NUM PUNCT SCONJ PRON VERB DET NOUN ADV DET ADJ NOUN AUX AUX ADJ PUNCT SPACE,O relationship O O O O O O O O O O O O O O O O O relationship O O O O O O O O O O O relationship O O O O O
+"If the customer who has borrowed a document and who has not returned it, his return deadline will be blocked from making any new loan until he has returned the work, even if the maximum number of borrowing is not reached.",SCONJ DET NOUN PRON AUX VERB DET NOUN CCONJ PRON AUX PART VERB PRON PUNCT PRON NOUN NOUN AUX AUX VERB ADP VERB DET ADJ NOUN SCONJ PRON AUX VERB DET NOUN PUNCT ADV SCONJ DET ADJ NOUN ADP NOUN AUX PART VERB PUNCT,O O entity O O O O O O O O O O O O O O O O O O O O O O O O O O O O entity O O O O O O O relationship O O O O
+A company consists of departments.,DET NOUN VERB ADP NOUN PUNCT,O entity O O entity O
+Departments are located in one or more offices.,NOUN AUX VERB ADP NUM CCONJ ADJ NOUN PUNCT,entity O O O O O O entity O
+One office acts as a headquarter.,NUM NOUN VERB ADP DET NOUN PUNCT,O entity O O O entity O
+Eachdepartment has a manager who is recruited from the set of employees.,PROPN VERB DET NOUN PRON AUX VERB ADP DET NOUN ADP NOUN PUNCT,O O O entity O O relationship O O O O entity O
+Each college has its own website.,DET NOUN VERB PRON ADJ NOUN PUNCT,O entity relationship O O entity O
+"Each college is structured into departments, each of which has specific teachers.",DET NOUN AUX VERB ADP NOUN PUNCT PRON ADP PRON VERB ADJ NOUN PUNCT,O entity O relationship O entity O O O O relationship O entity O
+"Among these teachers, one of them is responsible for the department.",ADP DET NOUN PUNCT NUM ADP PRON AUX ADJ ADP DET NOUN PUNCT,O O entity O O O O O relationship O O entity O
+"A teacher is defined by his name, first name, phone number, e-mail, date of employment and his index.",DET NOUN AUX VERB ADP PRON NOUN PUNCT ADJ NOUN PUNCT NOUN NOUN PUNCT NOUN NOUN NOUN PUNCT NOUN ADP NOUN CCONJ PRON NOUN PUNCT,O entity O O O O attr O O attr O attr O O O O O O attr O O O O attr O
+Each teacher teaches only one subject.,DET NOUN VERB ADV NUM NOUN PUNCT,O entity relationship O O entity O
+The students take several subjects and receive a grade for each of them.,DET NOUN VERB ADJ NOUN CCONJ VERB DET NOUN ADP PRON ADP PRON PUNCT,O entity relationship O entity O O O O O O O O O
+"For each student, we want to manage his name, first name, phone number, e-mail, as well as his year of entry to the college.",ADP DET NOUN PUNCT PRON VERB PART VERB PRON NOUN PUNCT ADJ NOUN PUNCT NOUN NOUN PUNCT NOUN NOUN NOUN PUNCT ADV ADV ADP PRON NOUN ADP NOUN ADP DET NOUN PUNCT,O O entity O O O O O O attr O O attr O attr O O O O O O O O O O attr O O O O entity O
+A subject can be taught by several teachers but always in the same classroom (each one having a certain number of seats).,DET NOUN AUX AUX VERB ADP ADJ NOUN CCONJ ADV ADP DET ADJ NOUN PUNCT DET NOUN VERB DET ADJ NOUN ADP NOUN PUNCT PUNCT,O entity O O O O O entity O O O O O O O O O O O O O O O O O
+We want to be able to calculate the average per subject and per department.,PRON VERB PART AUX ADJ PART VERB DET NOUN ADP NOUN CCONJ ADP NOUN PUNCT,O O O O O O O O O O entity O O entity O
+We also want to calculate a student's overall average and display the subjects in which he or she was not graded.,PRON ADV VERB PART VERB DET NOUN PART ADJ NOUN CCONJ VERB DET NOUN ADP PRON PRON CCONJ PRON AUX PART VERB PUNCT,O O O O O O entity O O O O O O entity O O O O O O O O O
+"Finally, we want to be able to print the data sheet (, first name, phone, e-mail) of a teacher or a student.",ADV PUNCT PRON VERB PART AUX ADJ PART VERB DET NOUN NOUN PUNCT PUNCT ADJ NOUN PUNCT NOUN PUNCT NOUN NOUN NOUN PUNCT ADP DET NOUN CCONJ DET NOUN PUNCT,O O O O O O O O O O O O O O O attr O attr O O O O O O O entity O O entity O
+"Design a system for a movie-shop, in order to
+handle ordering of movies and browsing of the
+catalogue of the store, and user subscriptions with
+rechargeable cards.
+",NOUN DET NOUN ADP DET NOUN PUNCT NOUN PUNCT ADP NOUN PART SPACE VERB NOUN ADP NOUN CCONJ VERB ADP DET SPACE NOUN ADP DET NOUN PUNCT CCONJ NOUN NOUN ADP SPACE ADJ NOUN PUNCT SPACE,O O O O O entity O O O O O O O O O O entity O O O O O O O O O O O O O O O O O O O
+"Only subscribers are allowed hiring movies with
+their own card.
+",ADJ NOUN AUX VERB VERB NOUN ADP SPACE PRON ADJ NOUN PUNCT SPACE,O entity O O relationship entity O O O O O O O
+"Both users and subscribers can buy a movie and
+their data are saved in the related order.
+",DET NOUN CCONJ NOUN AUX VERB DET NOUN CCONJ SPACE PRON NOUN AUX VERB ADP DET ADJ NOUN PUNCT SPACE,O entity O entity O relationship O entity O O O O O O O O O O O O
+When a movie is not available it is ordered,SCONJ DET NOUN AUX PART ADJ PRON AUX VERB,O O entity O O O O O O
+We want to automate the management of a small municipal library.,PRON VERB PART VERB DET NOUN ADP DET ADJ ADJ NOUN PUNCT,O O O O O O O O O O entity O
+"For this, we analyzed its operation to obtain the following list of rules and statements:
+Members have a first name (character string) and a surname (character string).
+",ADP PRON PUNCT PRON VERB PRON NOUN PART VERB DET VERB NOUN ADP NOUN CCONJ NOUN PUNCT SPACE NOUN VERB DET ADJ NOUN PUNCT NOUN NOUN PUNCT CCONJ DET NOUN PUNCT NOUN NOUN PUNCT PUNCT SPACE,O O O O O O O O O O O O O O O O O O entity O O O O O O O O O O attr O O O O O O
+"The library consists of a set of documents and a set of patrons.
+",DET NOUN VERB ADP DET NOUN ADP NOUN CCONJ DET NOUN ADP NOUN PUNCT SPACE,O entity O O O O O entity O O O O entity O O
+"Members are subscribed or unsubscribed on a simple request.
+",NOUN AUX VERB CCONJ VERB ADP DET ADJ NOUN PUNCT SPACE,entity relationship relationship O O O O O entity O O
+"New documents are added to the library regularly.
+",ADJ NOUN AUX VERB ADP DET NOUN ADV PUNCT SPACE,O entity relationship O O O entity O O O
+"These documents are either journals or volumes.
+",DET NOUN AUX CCONJ NOUN CCONJ NOUN PUNCT SPACE,O entity relationship O entity O entity O O
+"Volumes are either dictionaries, books or comics.
+",NOUN AUX PRON NOUN PUNCT NOUN CCONJ NOUN PUNCT SPACE,entity relationship O entity O entity O entity O O
+"The documents are characterized by a title (character string).
+",DET NOUN AUX VERB ADP DET NOUN PUNCT NOUN NOUN PUNCT PUNCT SPACE,O entity relationship O O O attr O O O O O O
+Volumes also have an author (character string).,NOUN ADV VERB DET NOUN PUNCT NOUN NOUN PUNCT PUNCT,entity O O O attr O O O O O
+"Bds also have a recipient name (character string).
+",PROPN ADV VERB DET ADJ NOUN PUNCT NOUN NOUN PUNCT PUNCT SPACE,entity O O O O O O O O O O O
+"The newspapers have, in addition to the characteristics of the documents, a date of publication (a date).
+",DET NOUN VERB PUNCT ADP NOUN ADP DET NOUN ADP DET NOUN PUNCT DET NOUN ADP NOUN PUNCT DET NOUN PUNCT PUNCT SPACE,O entity O O O O O O O O O entity O O attr O O O O attr O O O
+"Only books can be borrowed.
+",ADJ NOUN AUX AUX VERB PUNCT SPACE,O entity O O O O O
+"A member can borrow or return a book.
+",DET NOUN AUX VERB CCONJ VERB DET NOUN PUNCT SPACE,O entity O relationship O O O entity O O
+"Members can borrow books (and only books) and it must be possible to know at any time which books a member has borrowed.
+",NOUN AUX VERB NOUN PUNCT CCONJ ADJ NOUN PUNCT CCONJ PRON AUX AUX ADJ PART VERB ADP DET NOUN PRON VERB DET NOUN AUX VERB PUNCT SPACE,entity O relationship entity O O O entity O O O O O O O O O O O O entity O entity O O O O
+"A member can borrow a maximum of 3 books.
+",DET NOUN AUX VERB DET NOUN ADP NUM NOUN PUNCT SPACE,O entity O relationship O O O O entity O O
+The return date for a borrowed book is fixed at the time of the loan.,DET NOUN NOUN ADP DET VERB NOUN AUX VERB ADP DET NOUN ADP DET NOUN PUNCT,O O attr O O O entity O O O O O O O O O
+This date can be extended upon request.,DET NOUN AUX AUX VERB SCONJ NOUN PUNCT,O attr O O O O entity O
+"ATMs are deceptively simple: although customers only need to press a few buttons to receive cash, there are many layers of security that a safe and effective ATM must pass through to prevent fraud and provide value for banking customers.",NOUN AUX ADV ADJ PUNCT SCONJ NOUN ADV VERB PART VERB DET ADJ NOUN PART VERB NOUN PUNCT PRON VERB ADJ NOUN ADP NOUN PRON DET ADJ CCONJ ADJ PROPN AUX VERB ADP PART VERB NOUN CCONJ VERB NOUN ADP NOUN NOUN PUNCT,entity O O O O O entity O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O entity O
+"Each customer has a VAT number, a name, a phone number and an address.",DET NOUN VERB DET NOUN NOUN PUNCT DET NOUN PUNCT DET NOUN NOUN CCONJ DET NOUN PUNCT,O entity O O O O O O attr O O O O O O attr O
+"When a customer wants to send a package to another customer, he just has to login to the company website, select the customer he wants to send the package to, enter the package’s weight and if the delivery is normal or urgent.",SCONJ DET NOUN VERB PART VERB DET NOUN ADP DET NOUN PUNCT PRON ADV VERB PART VERB ADP DET NOUN NOUN PUNCT VERB DET NOUN PRON VERB PART VERB DET NOUN PART PUNCT VERB DET NOUN PART NOUN CCONJ SCONJ DET NOUN AUX ADJ CCONJ ADJ PUNCT,O O entity O O relationship O entity O O entity O O O O O O O O O O O O O entity O O O relationship O entity O O O O entity O attr O O O O O O O attr O
+He then receives an unique identifier code that he writes on the package.,PRON ADV VERB DET ADJ ADJ NOUN PRON PRON VERB ADP DET NOUN PUNCT,O O O O O attr O O O O O O entity O
+The package is then delivered by the customer at the delivery center of his choosing.,DET NOUN AUX ADV VERB ADP DET NOUN ADP DET NOUN NOUN ADP PRON NOUN PUNCT,O entity O O O O O entity O O O O O O O O
+A delivery center has a unique name and an address.,DET NOUN NOUN VERB DET ADJ NOUN CCONJ DET NOUN PUNCT,O O O O O O attr O O attr O
+Each client has an associated delivery center.,DET NOUN VERB DET VERB NOUN NOUN PUNCT,O entity O O relationship O O O
+This delivery center is chosen by the company and it is normally the one closest to the customer’s house.,DET NOUN NOUN AUX VERB ADP DET NOUN CCONJ PRON AUX ADV DET NUM ADJ ADP DET NOUN PART NOUN PUNCT,O O O O O O O O O O O O O O O O O entity O O O
+The package is them routed through an internal system until it reaches the delivery center of the recipient.,DET NOUN AUX PRON VERB ADP DET ADJ NOUN SCONJ PRON VERB DET NOUN NOUN ADP DET NOUN PUNCT,O entity O O O O O O O O O O O O O O O O O
+The package is then delivered by hand from that delivery center to the recipient by a courier.,DET NOUN AUX ADV VERB ADP NOUN ADP DET NOUN NOUN ADP DET NOUN ADP DET NOUN PUNCT,O entity O O O O O O O O O O O O O O entity O
+"Couriers have a single VAT number, a name and a phone number.",NOUN VERB DET ADJ NOUN NOUN PUNCT DET NOUN CCONJ DET NOUN NOUN PUNCT,entity O O O O O O O attr O O O O O
+Each courier works in a single delivery center.,DET NOUN VERB ADP DET ADJ NOUN NOUN PUNCT,O entity O O O O O O O
+A courier is assigned to a packet as soon as the packet is introduced in the system.,DET NOUN AUX VERB ADP DET NOUN ADV ADV SCONJ DET NOUN AUX VERB ADP DET NOUN PUNCT,O entity O O O O entity O O O O entity O O O O O O
+Consider a document made up of one or more sheets.,VERB DET NOUN VERB ADP ADP NUM CCONJ ADJ NOUN PUNCT,O O entity O O O O O O entity O
+The sheet includes geo objects and text.,DET NOUN VERB PROPN NOUN CCONJ NOUN PUNCT,O entity relationship O O O entity O
+We assume the following two geometric objects: circle and rectangle.,PRON VERB DET VERB NUM ADJ NOUN PUNCT NOUN CCONJ NOUN PUNCT,O O O O O O O O entity O entity O
+"Anyone who has carried out a professional activity for 5 years related to the subject of their application may apply for a technological and vocational education diploma from the Center for Validation of Acquired Skills of the Academy of their place of residence. .
+
+",PRON PRON AUX VERB ADP DET ADJ NOUN ADP NUM NOUN VERB ADP DET NOUN ADP PRON NOUN AUX VERB ADP DET ADJ CCONJ ADJ NOUN NOUN ADP DET PROPN ADP PROPN ADP PROPN PROPN ADP DET PROPN ADP PRON NOUN ADP NOUN PUNCT PUNCT SPACE,O O O O O O O O O O O O O O O O O O O O O O O O O O entity O O O O O O O O O O O O O O O O O O O
+The employee obtains a blank file from the Academy's Acquired Validation Center (CAVA).,DET NOUN VERB DET ADJ NOUN ADP DET PROPN PART PROPN PROPN PROPN PUNCT PROPN PUNCT PUNCT,O entity O O O O O O O O O O O O O O O
+"After completing the file, the employee sends it to the CAVA.",ADP VERB DET NOUN PUNCT DET NOUN VERB PRON ADP DET PROPN PUNCT,O O O O O O entity O O O O O O
+"The file contains the civil status of the candidate (surname, first name, address), a description of his professional activities for 5 years, the diploma requested.",DET NOUN VERB DET ADJ NOUN ADP DET NOUN PUNCT NOUN PUNCT ADJ NOUN PUNCT NOUN PUNCT PUNCT DET NOUN ADP PRON ADJ NOUN ADP NUM NOUN PUNCT DET NOUN VERB PUNCT,O O O O O O O O entity O attr O O O O attr O O O O O O O O O O O O O entity O O
+The CAVA sends the file to the home of the Academy inspector responsible for the diploma concerned.,DET PROPN VERB DET NOUN ADP DET NOUN ADP DET PROPN NOUN ADJ ADP DET NOUN VERB PUNCT,O O O O O O O O O O O entity O O O entity O O
+The inspector verifies whether the file is admissible.,DET NOUN NOUN SCONJ DET NOUN AUX ADJ PUNCT,O entity O O O O O O O
+"That is to say, if the diploma requested corresponds to the professional activities of the candidate for at least 5 years.",PRON AUX PART VERB PUNCT SCONJ DET NOUN VERB NOUN ADP DET ADJ NOUN ADP DET NOUN ADP ADV ADV NUM NOUN PUNCT,O O O O O O O entity O O O O O O O O entity O O O O O O
+"The inspector communicates his decision to the CAVA, which records it in its database.",DET NOUN VERB PRON NOUN ADP DET PROPN PUNCT PRON VERB PRON ADP PRON NOUN PUNCT,O entity O O O O O O O O O O O O O O
+"If the file is admissible, an acknowledgment of receipt is sent to the candidate; otherwise the file is returned to the candidate with a letter indicating the reasons for the refusal of the file.
+
+",SCONJ DET NOUN AUX ADJ PUNCT DET NOUN ADP NOUN AUX VERB ADP DET NOUN PUNCT ADV DET NOUN AUX VERB ADP DET NOUN ADP DET NOUN VERB DET NOUN ADP DET NOUN ADP DET NOUN PUNCT SPACE,O O O O O O O O O O O O O O entity O O O O O O O O entity O O O O O O O O O O O O O O
+There is one jury per diploma.,PRON VERB NUM NOUN ADP NOUN PUNCT,O O O entity O entity O
+A jury is made up of the Academy inspector responsible for the diploma and teachers.,DET NOUN AUX VERB ADP ADP DET PROPN NOUN ADJ ADP DET NOUN CCONJ NOUN PUNCT,O entity O O O O O O entity O O O entity O entity O
+The CAVA knows the contact details of the teachers who are members of a jury.,DET PROPN VERB DET NOUN NOUN ADP DET NOUN PRON AUX NOUN ADP DET NOUN PUNCT,O O O O O O O O entity O O O O O entity O
+"Each jury meets three times a year.
+
+",DET NOUN VERB NUM NOUN DET NOUN PUNCT SPACE,O entity O O O O O O O
+"The schedule of jury meetings is established by the Academy inspector responsible for the diploma concerned, at the start of the school year.",DET NOUN ADP NOUN NOUN AUX VERB ADP DET PROPN NOUN ADJ ADP DET NOUN VERB PUNCT ADP DET NOUN ADP DET NOUN NOUN PUNCT,O O O entity O O O O O O entity O O O entity O O O O O O O O O O
+"Three weeks before a meeting of a jury, the CAVA summons the members of the jury as well as the candidates with a pending diploma application file (concerning the diploma under the responsibility of the jury).",NUM NOUN ADP DET NOUN ADP DET NOUN PUNCT DET PROPN VERB DET NOUN ADP DET NOUN ADV ADV ADP DET NOUN ADP DET VERB NOUN NOUN NOUN PUNCT VERB DET NOUN ADP DET NOUN ADP DET NOUN PUNCT PUNCT,O O O O O O O entity O O O O O O O O entity O O O O O O O O entity O O O O O entity O O O O O entity O O
+"At the end of a meeting, the jury draws up minutes in which the decisions of the jury are summarized (acceptance or refusal of the diploma).",ADP DET NOUN ADP DET NOUN PUNCT DET NOUN VERB ADP NOUN ADP PRON DET NOUN ADP DET NOUN AUX VERB PUNCT NOUN CCONJ NOUN ADP DET NOUN PUNCT PUNCT,O O O O O O O O entity O O O O O O O O O entity O O O O O O O O entity O O
+"Depending on this report, the CAVA sends a certificate of diploma to the candidates or a refusal of diploma.",VERB ADP DET NOUN PUNCT DET PROPN VERB DET NOUN ADP NOUN ADP DET NOUN CCONJ DET NOUN ADP NOUN PUNCT,O O O O O O O O O O O entity O O O O O O O entity O
+"each type of product has a unique code (barcode label), and the same price for all products of this type.",DET NOUN ADP NOUN VERB DET ADJ NOUN PUNCT PROPN NOUN PUNCT PUNCT CCONJ DET ADJ NOUN ADP DET NOUN ADP DET NOUN PUNCT,O O O entity O O O O O attr O O O O O O attr O O entity O O O O
+"each type of product is referenced in a catalog, with its associated price.",DET NOUN ADP NOUN AUX VERB ADP DET NOUN PUNCT ADP PRON VERB NOUN PUNCT,O O O entity O O O O O O O O O attr O
+"When the price of a product must be modified, the manager modifies its price in the catalog, then on the floor where it is stored.
+",SCONJ DET NOUN ADP DET NOUN AUX AUX VERB PUNCT DET NOUN VERB PRON NOUN ADP DET NOUN PUNCT ADV ADP DET NOUN SCONJ PRON AUX VERB PUNCT SPACE,O O attr O O entity O O O O O entity O O attr O O O O O O O O O O O O O O
+"The cashier identifies himself to start the cash register (with a password).
+",DET NOUN VERB PRON PART VERB DET NOUN NOUN PUNCT ADP DET NOUN PUNCT PUNCT SPACE,O entity O O O relationship O O O O O O O O O O
+"the cash register will carry out the usual functions of a cash register: subtotal calculation, total calculation, possibility of entering several items with the same code, return of goods with the receipt.",DET NOUN NOUN AUX VERB ADP DET ADJ NOUN ADP DET NOUN NOUN PUNCT ADJ NOUN PUNCT ADJ NOUN PUNCT NOUN ADP VERB ADJ NOUN ADP DET ADJ NOUN PUNCT NOUN ADP NOUN ADP DET NOUN PUNCT,O O O O O O O O O O O O O O attr O O entity O O O O O O O O O O O O O O O O O entity O
+"The cash register allows you to edit reports:
+· the receipt which will be given only for an effective sale .",DET NOUN NOUN VERB PRON PART VERB NOUN PUNCT SPACE PUNCT DET NOUN PRON AUX AUX VERB ADV ADP DET ADJ NOUN PUNCT,O O O O O O O O O O O O entity O O O O O O O O entity O
+"it contains the store name, a welcome message, the date and time.",PRON VERB DET NOUN NOUN PUNCT DET ADJ NOUN PUNCT DET NOUN CCONJ NOUN PUNCT,O O O O O O O O O O O attr O attr O
+"Then for each sale it gives the product code, product description, unit price, quantity and subtotal.",ADV ADP DET NOUN PRON VERB DET NOUN NOUN PUNCT NOUN NOUN PUNCT NOUN NOUN PUNCT NOUN CCONJ NOUN PUNCT,O O O entity O O O entity O O entity O O O attr O attr O attr O
+"Finally we find the total including VAT
+· The detailed daily report: list of the detailed set of sales for the day.",ADV PRON VERB DET NOUN VERB NOUN SPACE PUNCT DET ADJ ADJ NOUN PUNCT NOUN ADP DET ADJ NOUN ADP NOUN ADP DET NOUN PUNCT,O O O O entity O entity O O O O O O O O O O O O O O O O O O
+You are asked to create a database to store cooking recipes and also to manage the stocks of ingredients you have.,PRON AUX VERB PART VERB DET NOUN PART VERB NOUN NOUN CCONJ ADV PART VERB DET NOUN ADP NOUN PRON VERB PUNCT,O O O O O O O O O O entity O O O O O O relationship entity O relationship O
+"Each recipe has a name, a description, the preparation and cooking time, the number of calories per person, the number of parts and the level of difficulty: difficult, medium or easy.",DET NOUN VERB DET NOUN PUNCT DET NOUN PUNCT DET NOUN CCONJ NOUN NOUN PUNCT DET NOUN ADP NOUN ADP NOUN PUNCT DET NOUN ADP NOUN CCONJ DET NOUN ADP NOUN PUNCT ADJ PUNCT NOUN CCONJ ADJ PUNCT,O entity relationship O attr O O attr O O attr O O O O O O relationship O O O O O O relationship O O O O relationship attr O O O O O O O
+For each recipe you want to know what ingredients are needed and the quantity associated with each ingredient.,ADP DET NOUN PRON VERB PART VERB PRON NOUN AUX VERB CCONJ DET NOUN VERB ADP DET NOUN PUNCT,O O entity O O O O O entity O O O O attr O O O entity O
+For each ingredient you have its name and the number of calories per 100 grams of that ingredient.,ADP DET NOUN PRON VERB PRON NOUN CCONJ DET NOUN ADP NOUN ADP NUM NOUN ADP DET NOUN PUNCT,O O entity O relationship O attr O O O relationship O O O O relationship O entity O
+"Each ingredient has a type, for example starch for the ingredient potato.",DET NOUN VERB DET NOUN PUNCT ADP NOUN NOUN ADP DET ADJ NOUN PUNCT,O entity relationship O entity O O O O O O entity O O
+"The same ingredient can have several packaging, for example, the ingredient flour can be stored as a 1 kg or 500 g package.",DET ADJ NOUN AUX VERB ADJ NOUN PUNCT ADP NOUN PUNCT DET ADJ NOUN AUX AUX VERB ADP DET NUM NOUN CCONJ NUM NOUN NOUN PUNCT,O O entity O relationship O entity O O O O O entity O O O relationship O O O O O O O O O
+These two packages will be considered as different products.,DET NUM NOUN AUX AUX VERB ADP ADJ NOUN PUNCT,O O entity O O O O O entity O
+"To manage the stocks of ingredients, the storage location of the products in the housing is memorized.",PART VERB DET NOUN ADP NOUN PUNCT DET NOUN NOUN ADP DET NOUN ADP DET NOUN AUX VERB PUNCT,O O O O relationship entity O O entity O relationship O entity O O O O O O
+Each storage is named and for each storage you know which products are stored there.,DET NOUN AUX VERB CCONJ ADP DET NOUN PRON VERB DET NOUN AUX VERB ADV PUNCT,O entity O attr O O O entity O O O entity O relationship O O
+The same ingredient can be stored in several racks.,DET ADJ NOUN AUX AUX VERB ADP ADJ NOUN PUNCT,O O entity O O relationship O O attr O
+"A bank system contains data on customers 
+(identified by name and address) and 
+their accounts.
+",DET NOUN NOUN VERB NOUN ADP NOUN SPACE PUNCT VERB ADP NOUN CCONJ NOUN PUNCT CCONJ SPACE PRON NOUN PUNCT SPACE,O O O O O O entity O O O O attr O attr O O O O entity O O
+"Each account has a balance and there are 2 
+type of accounts: one for savings which 
+offers an interest rate, the other for 
+investments, used to buy stocks.
+",DET NOUN VERB DET NOUN CCONJ PRON VERB NUM SPACE NOUN ADP NOUN PUNCT NUM ADP NOUN PRON SPACE VERB DET NOUN NOUN PUNCT DET ADJ ADP SPACE NOUN PUNCT VERB PART VERB NOUN PUNCT SPACE,O entity O O attr O O O O O O O entity O O O entity O O O O O O O O O O O entity O O O O entity O O
+"Stocks are bought at a certain quantity for 
+a certain price (ticker) and the bank 
+applies commission on stock orders.",NOUN AUX VERB ADP DET ADJ NOUN ADP SPACE DET ADJ NOUN PUNCT NOUN PUNCT CCONJ DET NOUN SPACE VERB NOUN ADP NOUN NOUN PUNCT,entity O O O O O attr O O O O O O attr O O O O O relationship attr O O O O
+Consider an information system that concerns the monitoring of the personnel of a set of local agencies.,VERB DET NOUN NOUN PRON VERB DET NOUN ADP DET NOUN ADP DET NOUN ADP ADJ NOUN PUNCT,O O O O O O O O O O entity O O O O O entity O
+"Each agency is located in a region, each region is managed by a regional management.",DET NOUN AUX VERB ADP DET NOUN PUNCT DET NOUN AUX VERB ADP DET ADJ NOUN PUNCT,O entity O O O O entity O O entity O O O O entity O O
+"The regional management is in charge of a set of local agencies.
+",DET ADJ NOUN AUX ADP NOUN ADP DET NOUN ADP ADJ NOUN PUNCT SPACE,O entity O O O O O O O O O entity O O
+a regional directorate is characterized by a code and a wording.,DET ADJ NOUN AUX VERB ADP DET NOUN CCONJ DET NOUN PUNCT,O entity O O O O O attr O O attr O
+"We want to model a system for management of flights and pilots.
+",PRON VERB PART VERB DET NOUN ADP NOUN ADP NOUN CCONJ NOUN PUNCT SPACE,O O O O O O O O O entity O entity O O
+An airline operates flights.,DET NOUN VERB NOUN PUNCT,O entity relationship entity O
+"Each airline has an ID.
+",DET NOUN VERB DET PROPN PUNCT SPACE,O entity relationship O attr O O
+"Each flight has an ID a departure airport and an arrival airport: an 
+airport as a unique identifier.
+",DET NOUN VERB DET PROPN DET NOUN NOUN CCONJ DET NOUN NOUN PUNCT DET SPACE NOUN ADP DET ADJ NOUN PUNCT SPACE,O entity relationship O attr O O entity O O O entity O O O entity O O O attr O O
+"Each flight has a pilot and a co-pilot, and it uses an aircraft of a 
+certain type; a flight has also a departure time and an arrival time. 
+",DET NOUN VERB DET NOUN CCONJ DET NOUN NOUN NOUN PUNCT CCONJ PRON VERB DET NOUN ADP DET SPACE ADJ NOUN PUNCT DET NOUN VERB ADV DET NOUN NOUN CCONJ DET NOUN NOUN PUNCT SPACE,O entity relationship O entity O O O O entity O O O relationship O entity O O O O O O O entity relationship O O O O O O O O O O
+"An airline owns a set of aircrafts of different types. 
+",DET NOUN VERB DET NOUN ADP NOUN ADP ADJ NOUN PUNCT SPACE,O entity relationship O O O entity O O O O O
+"An aircraft can be in a working state or it can be under repair. 
+",DET NOUN AUX AUX ADP DET VERB NOUN CCONJ PRON AUX AUX ADP NOUN PUNCT SPACE,O entity O O O O O O O O O O O attr O O
+"In a particular moment an aircraft can be landed or airborne. 
+",ADP DET ADJ NOUN DET NOUN AUX AUX VERB CCONJ ADJ PUNCT SPACE,O O O O O entity O O attr O O O O
+"A company has a set of pilots: each pilot has an experience level:
+1 is minimum, 3 is maximum.
+",DET NOUN VERB DET NOUN ADP NOUN PUNCT DET NOUN VERB DET NOUN NOUN PUNCT SPACE NUM AUX ADJ PUNCT NUM AUX ADJ PUNCT SPACE,O O relationship O O O entity O O entity relationship O O O O O O O O O O O O O O
+"A type of aeroplane may need a particular number of pilots, with a 
+different role (e.g.: captain, co-pilot, navigator): there must be at least 
+one captain and one co-pilot, and a captain must have a level 3.",DET NOUN ADP NOUN AUX VERB DET ADJ NOUN ADP NOUN PUNCT ADP DET SPACE ADJ NOUN PUNCT ADV PUNCT NOUN PUNCT NOUN NOUN ADJ PUNCT NOUN PUNCT PRON AUX AUX ADP ADJ SPACE NUM NOUN CCONJ NUM NOUN NOUN NOUN PUNCT CCONJ DET NOUN AUX VERB DET NOUN NUM PUNCT,O O O O O O O O O O entity O O O O O O O O O O O O O entity O O O O O O O O O O O O O O O entity O O O O O O O O O O
+A hotel is composed of at least two rooms.,DET NOUN AUX VERB ADP ADV ADV NUM NOUN PUNCT,O entity O O O O O O entity O
+Each room has a bathroom: shower or bath.,DET NOUN VERB DET NOUN PUNCT NOUN CCONJ NOUN PUNCT,O entity relationship O entity O entity O entity O
+A hotel accommodates people.,DET NOUN VERB NOUN PUNCT,O entity O entity O
+It can employ staff and it must be managed by a manager.,PRON AUX VERB NOUN CCONJ PRON AUX AUX VERB ADP DET NOUN PUNCT,O O relationship entity O O O O O O O entity O
+"Only the first and last names of the employees, managers and occupants are known.",ADV DET ADJ CCONJ ADJ NOUN ADP DET NOUN PUNCT NOUN CCONJ NOUN AUX VERB PUNCT,O O attr O O O O O entity O entity O entity O O O
+Some people are children and others are adults (it is forbidden to employ children).,DET NOUN AUX NOUN CCONJ NOUN AUX NOUN PUNCT PRON AUX VERB PART VERB NOUN PUNCT PUNCT,O entity O O O O O O O O O O O relationship O O O
+"A hotel has the following characteristics: an address, a number of rooms and a category.",DET NOUN VERB DET ADJ NOUN PUNCT DET NOUN PUNCT DET NOUN ADP NOUN CCONJ DET NOUN PUNCT,O entity relationship O O O O O attr O O attr O entity O O attr O
+"A room is characterized by the number and beds it contains, its price and its number.",DET NOUN AUX VERB ADP DET NOUN CCONJ NOUN PRON VERB PUNCT PRON NOUN CCONJ PRON NOUN PUNCT,O entity O O O O attr O attr O O O O attr O O attr O
+We want to know who occupies which room on which date.,PRON VERB PART VERB PRON VERB DET NOUN ADP DET NOUN PUNCT,O O O O O O O entity O O O O
+"For each day of the year, we want to be able to calculate the rent of each room according to its price and its occupation (the rent is null if the room is unoccupied).",ADP DET NOUN ADP DET NOUN PUNCT PRON VERB PART AUX ADJ PART VERB DET NOUN ADP DET NOUN VERB ADP PRON NOUN CCONJ PRON NOUN PUNCT DET NOUN AUX ADJ SCONJ DET NOUN AUX ADJ PUNCT PUNCT,O O O O O O O O O O O O O O O O O O entity O O O attr O O O O O O O O O O entity O O O O
+The sum of these rents allows to calculate the turnover of the hotel between two dates.,DET NOUN ADP DET NOUN VERB PART VERB DET NOUN ADP DET NOUN ADP NUM NOUN PUNCT,O O O O O O O O O O O O entity O O O O
+A company has several warehouses located in different cities.,DET NOUN VERB ADJ NOUN VERB ADP ADJ NOUN PUNCT,O entity relationship O entity O O O entity O
+"In each of the warehouses is stored merchandise, the different products it needs for its activity.",ADP PRON ADP DET NOUN AUX VERB NOUN PUNCT DET ADJ NOUN PRON VERB ADP PRON NOUN PUNCT,O O O O entity O relationship entity O O O entity O O O relationship O O
+Two different warehouses can have the same products.,NUM ADJ NOUN AUX VERB DET ADJ NOUN PUNCT,O O entity O O O O entity O
+"For each product we also want to know its supplier (name, address), its name, whether it is toxic or not and what volume it occupies.",ADP DET NOUN PRON ADV VERB PART VERB PRON NOUN PUNCT NOUN PUNCT NOUN PUNCT PUNCT PRON NOUN PUNCT SCONJ PRON AUX ADJ CCONJ PART CCONJ PRON NOUN PRON VERB PUNCT,O O entity O O O O O relationship entity O attr O attr O O relationship attr O O O O attr O O O O attr O O O
+For each warehouse we want to know its surface and its address.,ADP DET NOUN PRON VERB PART VERB PRON NOUN CCONJ PRON NOUN PUNCT,O O entity O O O O relationship attr O relationship attr O
+"Airlines offer different flights
+A flight is open for booking and closed by order of the company
+A customer can book one or more flights, for different passengers
+A reservation concerns a single flight and a single passenger
+A reservation can be confirmed or canceled
+A flight has a departure airport and an arrival airport
+A flight has a day and time of departure, and a day and time of arrival
+A flight may include stopovers in one or more airport(s)
+",PROPN VERB ADJ NOUN SPACE DET NOUN AUX ADJ ADP NOUN CCONJ VERB ADP NOUN ADP DET NOUN SPACE DET NOUN AUX VERB NUM CCONJ ADJ NOUN PUNCT ADP ADJ NOUN SPACE DET NOUN VERB DET ADJ NOUN CCONJ DET ADJ NOUN SPACE DET NOUN AUX AUX VERB CCONJ VERB SPACE DET NOUN VERB DET NOUN NOUN CCONJ DET NOUN NOUN SPACE DET NOUN VERB DET NOUN CCONJ NOUN ADP NOUN PUNCT CCONJ DET NOUN CCONJ NOUN ADP NOUN SPACE DET NOUN AUX VERB NOUN ADP NUM CCONJ ADJ NOUN PUNCT SPACE,entity relationship O entity O O entity O O O entity O O O O O O O O O entity O relationship O O O entity O O O entity O O entity relationship O O entity O O O entity O O entity O O O O O O O entity relationship O O entity O O O entity O O entity relationship O O O O O O O O O O O O O O O O entity O relationship entity O O O O O O O
+"A stopover has a departure time and an arrival time
+Each airport serves one or more cities",DET NOUN VERB DET NOUN NOUN CCONJ DET NOUN NOUN SPACE DET NOUN VERB NUM CCONJ ADJ NOUN,O entity relationship O O O O O O O O O entity relationship O O O entity
+"The popular bank in Morocco contains several agencies, it is characterized by its name (popular bank) and directed by a director, has a capital and an address.",DET ADJ NOUN ADP PROPN VERB ADJ NOUN PUNCT PRON AUX VERB ADP PRON NOUN PUNCT ADJ NOUN PUNCT CCONJ VERB ADP DET NOUN PUNCT VERB DET NOUN CCONJ DET NOUN PUNCT,O O entity relationship O relationship O entity O O O O O O attr O O entity O O O O O entity O relationship O attr O O attr O
+"THE director of the bank has a name, first name, age and salary (or income).",DET NOUN ADP DET NOUN VERB DET NOUN PUNCT ADJ NOUN PUNCT NOUN CCONJ NOUN PUNCT CCONJ NOUN PUNCT PUNCT,O entity O O entity relationship O attr O O attr O attr O attr O O O O O
+"Each agency has an address, employees and an identifier.",DET NOUN VERB DET NOUN PUNCT NOUN CCONJ DET NOUN PUNCT,O entity relationship O attr O entity O O attr O
+"Each employee also has a surname, first name and date of hire.",DET NOUN ADV VERB DET NOUN PUNCT ADJ NOUN CCONJ NOUN ADP NOUN PUNCT,O entity O relationship O attr O O attr O O O O O
+"An employee only works in one agency, but can request a transfer to another agency.",DET NOUN ADV VERB ADP NUM NOUN PUNCT CCONJ AUX VERB DET NOUN ADP DET NOUN PUNCT,O entity O relationship relationship O entity O O O O O O O O entity O
+"An employee can manage one or more customers, the latter has a single account in a given agency, a name, first name and an address.",DET NOUN AUX VERB NUM CCONJ ADJ NOUN PUNCT DET ADJ VERB DET ADJ NOUN ADP DET VERB NOUN PUNCT DET NOUN PUNCT ADJ NOUN CCONJ DET NOUN PUNCT,O entity O relationship O O O entity O O O relationship O O entity relationship O O entity O O attr O O attr O O attr O
+"Each registered customer is assigned to an employee in the agency.
+",DET VERB NOUN AUX VERB ADP DET NOUN ADP DET NOUN PUNCT SPACE,O O entity O relationship O O entity relationship O entity O O
+An account can either be a paid or unpaid account.,DET NOUN AUX CCONJ AUX DET ADJ CCONJ ADJ NOUN PUNCT,O entity O O O O O O O entity O
+Model a LAN in which we find two kinds of printers: ASCII printers can only print ASCII documents.,PROPN DET PROPN ADP PRON PRON VERB NUM NOUN ADP NOUN PUNCT ADJ NOUN AUX ADV VERB NOUN NOUN PUNCT,O O O O O O O O O O entity O O entity O O relationship O entity O
+PostScript printers can print either ASCII or Postscript documents.,PROPN NOUN AUX VERB CCONJ ADJ CCONJ PROPN NOUN PUNCT,O entity O relationship O O O O entity O
+The documents are sent around as content of packets.,DET NOUN AUX VERB ADP ADP NOUN ADP NOUN PUNCT,O entity O O O O O O entity O
+"For each admitted animal, its name, breed (if any) and owner must be stored.",ADP DET VERB NOUN PUNCT PRON NOUN PUNCT NOUN PUNCT SCONJ PRON PUNCT CCONJ NOUN AUX AUX VERB PUNCT,O O O entity O relationship attr O entity O O O O O entity O O O O
+Each animal should be given an unique numeric identifier.,DET NOUN AUX AUX VERB DET ADJ ADJ NOUN PUNCT,O entity O O O O O O attr O
+"For each owner, its name, address and phone number should be stored.",ADP DET NOUN PUNCT PRON NOUN PUNCT NOUN CCONJ NOUN NOUN AUX AUX VERB PUNCT,O O entity O relationship attr O attr O O O O O O O
+An unique numeric identifier should also be generated for each one of them.,DET ADJ ADJ NOUN AUX ADV AUX VERB ADP DET NUM ADP PRON PUNCT,O O O attr O O O O O O O O O O
+An animal might be owner-less.,DET NOUN AUX AUX NOUN PUNCT ADJ PUNCT,O entity O O entity O O O
+This happens frequently as the clinic often rescues abandoned dogs from the streets in order to treat them and get them new owners.,PRON VERB ADV SCONJ DET NOUN ADV VERB VERB NOUN ADP DET NOUN ADP NOUN PART VERB PRON CCONJ VERB PRON ADJ NOUN PUNCT,O O O O O O O O O O O O O O O O O O O O O O entity O
+It should be possible to store information about a specific breed even if no animals of that breed have been treated at the clinic.,PRON AUX AUX ADJ PART VERB NOUN ADP DET ADJ NOUN ADV SCONJ DET NOUN ADP DET NOUN AUX AUX VERB ADP DET NOUN PUNCT,O O O O O O O O O O entity O O O entity O O entity O O O O O O O
+Each appointement always has a responsible physician.,DET NOUN ADV VERB DET ADJ NOUN PUNCT,O entity O relationship O O entity O
+All appointements start at a certain date and time; and are attended by an animal (and of course its owner).,DET NOUN VERB ADP DET ADJ NOUN CCONJ NOUN PUNCT CCONJ AUX VERB ADP DET NOUN PUNCT CCONJ ADP NOUN PRON NOUN PUNCT PUNCT,O entity O O O O attr O attr O O O O O O entity O O O O relationship entity O O
+"For each physician, his name, address and phone number should be stored.",ADP DET NOUN PUNCT PRON NOUN PUNCT NOUN CCONJ NOUN NOUN AUX AUX VERB PUNCT,O O entity O O attr O attr O O O O O O O
+An unique numeric identifier should also be generated for each one of them.,DET ADJ ADJ NOUN AUX ADV AUX VERB ADP DET NUM ADP PRON PUNCT,O O O attr O O O O O O O O O O
+"In an appointement, several medical conditions might be detected.",ADP DET NOUN PUNCT ADJ ADJ NOUN AUX AUX VERB PUNCT,O O entity O O O entity O O relationship O
+Each condition has a common name and a scientific name.,DET NOUN VERB DET ADJ NOUN CCONJ DET ADJ NOUN PUNCT,O entity relationship O O attr O O O attr O
+No two conditions have the same scientific name.,DET NUM NOUN VERB DET ADJ ADJ NOUN PUNCT,O O entity O O O O attr O
+It should be possible to store information about the most common conditions for each different breed in the database.,PRON AUX AUX ADJ PART VERB NOUN ADP DET ADV ADJ NOUN ADP DET ADJ NOUN ADP DET NOUN PUNCT,O O O O O O O O O O O entity O O O entity O O O O
+Let the following sentences apply: A directory contains files.,VERB DET VERB NOUN VERB PUNCT DET NOUN VERB NOUN PUNCT,O O O O O O O entity relationship entity O
+A room contains walls.,DET NOUN VERB NOUN PUNCT,O entity relationship entity O
+Modems and keyboards are input/output devices.,PROPN CCONJ NOUN AUX NOUN SYM NOUN NOUN PUNCT,entity O entity O O O O entity O
+A stock exchange transaction is a purchase or a sale.,DET NOUN NOUN NOUN AUX DET NOUN CCONJ DET NOUN PUNCT,O O O O O O entity O O entity O
+A bank account can belong to a natural or legal person,DET NOUN NOUN AUX VERB ADP DET ADJ CCONJ ADJ NOUN,O O O O O O O O O O entity
+"Each hotel contains a number of rooms, each room is rented by a fixed price.",DET NOUN VERB DET NOUN ADP NOUN PUNCT DET NOUN AUX VERB ADP DET VERB NOUN PUNCT,O entity relationship O O O entity O O entity O O O O O attr O
+"The manager of the hotel manages the rental of the rooms.
+",DET NOUN ADP DET NOUN VERB DET NOUN ADP DET NOUN PUNCT SPACE,O entity O O entity relationship O O O O entity O O
+Access to the bathrooms is free since it is included in the price of the rooms.,NOUN ADP DET NOUN AUX ADJ SCONJ PRON AUX VERB ADP DET NOUN ADP DET NOUN PUNCT,O O O entity O O O O O O O O attr O O entity O
+Some rooms do not have a bathroom.,DET NOUN AUX PART VERB DET NOUN PUNCT,O entity O O O O entity O
+"The other rooms, such as kitchen, reception hall, are not part of the study.",DET ADJ NOUN PUNCT ADJ ADP NOUN PUNCT NOUN NOUN PUNCT AUX PART NOUN ADP DET NOUN PUNCT,O O entity O O O O O O O O O O O O O O O
+People can rent one or more rooms in the hotel.,NOUN AUX VERB NUM CCONJ ADJ NOUN ADP DET NOUN PUNCT,entity O relationship O O O entity O O entity O
+"In other words: the hotel accommodates a certain number of people.
+",ADP ADJ NOUN PUNCT DET NOUN VERB DET ADJ NOUN ADP NOUN PUNCT SPACE,O O O O O entity relationship O O O O entity O O
+"The reservation of a room is made by a customer, the manager looks for a free room, if there is the manager gives the price of the room to the customer who becomes the tenant of the room after having paid.",DET NOUN ADP DET NOUN AUX VERB ADP DET NOUN PUNCT DET NOUN VERB ADP DET ADJ NOUN PUNCT SCONJ PRON VERB DET NOUN VERB DET NOUN ADP DET NOUN ADP DET NOUN PRON VERB DET NOUN ADP DET NOUN ADP AUX VERB PUNCT,O relationship O O entity O O O O entity O O entity O O O O entity O O O O O entity O O attr O O entity O O entity O O O O O O entity O O O O
+"Otherwise, the customer leaves.",ADV PUNCT DET NOUN VERB PUNCT,O O O entity O O
+"Every day, the mailman delivers registered mail in a geographical area assigned to him.",DET NOUN PUNCT DET NOUN VERB ADJ NOUN ADP DET ADJ NOUN VERB ADP PRON PUNCT,O O O O entity relationship O entity O O O O relationship O O O
+The inhabitants are also associated with a geographical area.,DET NOUN AUX ADV VERB ADP DET ADJ NOUN PUNCT,O entity O O relationship O O O O O
+There are two types of registered mail: letters and parcels.,PRON VERB NUM NOUN ADP VERB NOUN PUNCT NOUN CCONJ NOUN PUNCT,O O O O O O entity O entity O entity O
+"As several letter carriers can intervene in the same area, we want, for each registered letter, the letter carrier who delivered it, in addition to the addressee.",SCONJ ADJ NOUN NOUN AUX VERB ADP DET ADJ NOUN PUNCT PRON VERB PUNCT ADP DET VERB NOUN PUNCT DET NOUN NOUN PRON VERB PRON PUNCT ADP NOUN ADP DET NOUN PUNCT,O O entity O O O O O O O O O O O O O O entity O O entity O O O O O O O O O O O
+"Each ingredient has a name, a measuring unit (e.g. olive oil is measured in liters, while eggs are unit based) and a quantity in stock.",DET NOUN VERB DET NOUN PUNCT DET VERB NOUN PUNCT ADV NOUN NOUN AUX VERB ADP NOUN PUNCT SCONJ NOUN AUX NOUN VERB PUNCT CCONJ DET NOUN ADP NOUN PUNCT,O entity O O attr O O O O O O O O O O O O O O O O O O O O O attr O O O
+"There are no two ingredients with the same name.
+",PRON VERB DET NUM NOUN ADP DET ADJ NOUN PUNCT SPACE,O O O O entity O O O attr O O
+Each dish is composed of several ingredients in a certain quantity.,DET NOUN AUX VERB ADP ADJ NOUN ADP DET ADJ NOUN PUNCT,O entity O relationship O O entity O O O attr O
+"An ingredient can, of course, be used in different dishes.",DET NOUN AUX PUNCT ADP NOUN PUNCT AUX VERB ADP ADJ NOUN PUNCT,O entity O O O O O O relationship O O entity O
+A dish has an unique name and a numeric identifier.,DET NOUN VERB DET ADJ NOUN CCONJ DET ADJ NOUN PUNCT,O entity O O O attr O O O attr O
+There are several tables at the restaurant.,PRON VERB ADJ NOUN ADP DET NOUN PUNCT,O O O entity O O O O
+Each one of them has an unique numeric identifier and a maximum ammount of people that can be seated there.,DET NOUN ADP PRON VERB DET ADJ ADJ NOUN CCONJ DET ADJ NOUN ADP NOUN PRON AUX AUX VERB ADV PUNCT,O O O O O O O O attr O O O O O attr O O O O O O
+"In each meal, several dishes are consumed at a certain table.",ADP DET NOUN PUNCT ADJ NOUN AUX VERB ADP DET ADJ NOUN PUNCT,O O entity O O entity O relationship O O O entity O
+The same dish can be eaten more than once in the same meal.,DET ADJ NOUN AUX AUX VERB ADJ ADP ADV ADP DET ADJ NOUN PUNCT,O O entity O O relationship O O O O O O entity O
+A meal takes place in a certain date and has a start and end time.,DET NOUN VERB NOUN ADP DET ADJ NOUN CCONJ VERB DET NOUN CCONJ VERB NOUN PUNCT,O entity O O O O O attr O O O attr O O O O
+Each meal has a responsible waiter.,DET NOUN VERB DET ADJ NOUN PUNCT,O entity O O relationship entity O
+"A waiter has an unique numerical identifier, a name, an address and a phone number.",DET NOUN VERB DET ADJ PROPN NOUN PUNCT DET NOUN PUNCT DET NOUN CCONJ DET NOUN NOUN PUNCT,O entity O O O O attr O O attr O O attr O O O O O
+In some cases it is important to store information about the client that consumed the meal.,ADP DET NOUN PRON AUX ADJ PART VERB NOUN ADP DET NOUN PRON VERB DET NOUN PUNCT,O O O O O O O O O O O entity O relationship O entity O
+"A client has a tax identification number, a name and an address.",DET NOUN VERB DET NOUN NOUN NOUN PUNCT DET NOUN CCONJ DET NOUN PUNCT,O entity O O O O O O O attr O O attr O
+This subset concerns the follow-up of the personnel of the local agencies located in the regions.,DET NOUN VERB DET NOUN PUNCT NOUN ADP DET NOUN ADP DET ADJ NOUN VERB ADP DET NOUN PUNCT,O O O O O O O O O entity O O O O O O O O O
+Each region is managed by a regional department which is in charge of a certain number of local agencies.,DET NOUN AUX VERB ADP DET ADJ NOUN PRON AUX ADP NOUN ADP DET ADJ NOUN ADP ADJ NOUN PUNCT,O entity O relationship O O O O O O O relationship O O O O O O O O
+A regional management is characterized by a code and a label.,DET ADJ NOUN AUX VERB ADP DET NOUN CCONJ DET NOUN PUNCT,O O O O O O O attr O O attr O
+A factory has several machines.,DET NOUN VERB ADJ NOUN PUNCT,O entity relationship O entity O
+Each one of them is operated by several workers.,DET NOUN ADP PRON AUX VERB ADP ADJ NOUN PUNCT,O O O O O relationship O O entity O
+A worker might work in more than one machine.,DET NOUN AUX VERB ADP ADJ ADP NUM NOUN PUNCT,O entity O relationship O O O O entity O
+"In this factory, several products of different types, are produced.",ADP DET NOUN PUNCT ADJ NOUN ADP ADJ NOUN PUNCT AUX VERB PUNCT,O O entity O O entity O O O O O O O
+Each different type of product is produced in a single machine.,DET ADJ NOUN ADP NOUN AUX VERB ADP DET ADJ NOUN PUNCT,O O O O entity O O O O O entity O
+"But, the same machine can produce more than one type of product.",CCONJ PUNCT DET ADJ NOUN AUX VERB ADJ ADP NUM NOUN ADP NOUN PUNCT,O O O O entity O relationship O O O O O entity O
+Products from the same type are all produced from the same single material and have the same weigth.,NOUN ADP DET ADJ NOUN AUX PRON VERB ADP DET ADJ ADJ NOUN CCONJ VERB DET ADJ NOUN PUNCT,entity O O O O O O O O O O O attr O O O O attr O
+Clients can issue purchase orders.,NOUN AUX VERB NOUN NOUN PUNCT,entity O O relationship entity O
+Each order has a list of the desired products and their quantity.,DET NOUN VERB DET NOUN ADP DET VERB NOUN CCONJ PRON NOUN PUNCT,O entity relationship O O O O O entity O O attr O
+"For each worker, the following data should be stored in the database: name (first and last), birth date, address and a list of his skills.",ADP DET NOUN PUNCT DET VERB NOUN AUX AUX VERB ADP DET NOUN PUNCT NOUN PUNCT ADV CCONJ ADJ PUNCT PUNCT NOUN NOUN PUNCT NOUN CCONJ DET NOUN ADP PRON NOUN PUNCT,O O entity O O O O O O O O O O O attr O O O O O O O attr O attr O O O O O attr O
+"For each machine, the following data should be stored: serial number, make, model and purchase date.",ADP DET NOUN PUNCT DET VERB NOUN AUX AUX VERB PUNCT ADJ NOUN PUNCT NOUN PUNCT NOUN CCONJ NOUN NOUN PUNCT,O O entity O O O O O O O O attr attr O attr O attr O relationship attr O
+"For each client, the followig data should be stored: name, address, phone number and name of the contact person (if any).",ADP DET NOUN PUNCT DET NOUN NOUN AUX AUX VERB PUNCT NOUN PUNCT NOUN PUNCT NOUN NOUN CCONJ NOUN ADP DET NOUN NOUN PUNCT SCONJ PRON PUNCT PUNCT,O O entity O O O O O O O O attr O attr O O attr O attr O O O O O O O O O
+"For each purchase order, the following date should be stored: order number, date it has been made, expected and actual delivery date.",ADP DET NOUN NOUN PUNCT DET VERB NOUN AUX AUX VERB PUNCT NOUN NOUN PUNCT NOUN PRON AUX AUX VERB PUNCT VERB CCONJ ADJ NOUN NOUN PUNCT,O O relationship entity O O O attr O O O O entity attr O attr O relationship O O O O O O O attr O
+"The operation of the computer system must be as follows:
+
+unloading a truck: when a truck arrives, an employee must enter the characteristics of each item into the system; the system then produces a list with a location for each item;
+loading a truck: the characteristics of the items to be loaded into a truck are entered by an employee in order to indicate to the system to free up slots.
+",DET NOUN ADP DET NOUN NOUN AUX AUX SCONJ VERB PUNCT SPACE VERB DET NOUN PUNCT SCONJ DET NOUN VERB PUNCT DET NOUN AUX VERB DET NOUN ADP DET NOUN ADP DET NOUN PUNCT DET NOUN ADV VERB DET NOUN ADP DET NOUN ADP DET NOUN PUNCT SPACE VERB DET NOUN PUNCT DET NOUN ADP DET NOUN PART AUX VERB ADP DET NOUN AUX VERB ADP DET NOUN ADP NOUN PART VERB ADP DET NOUN PART VERB ADP NOUN PUNCT SPACE,O O O O O O O O O O O O entity O O O O O O O O O entity O O O O O O entity O O O O O O O O O O O O O O O entity O O O O O O O O O O entity O O O O O O O O O O entity O O O O O O O O O O entity O O
+"Loading and unloading is done manually.
+
+",NOUN CCONJ NOUN AUX VERB ADV PUNCT SPACE,O O entity O O O O O
+Warehouse employees are under the responsibility of a manager whose role is to supervise the proper application of the instructions.,PROPN NOUN AUX ADP DET NOUN ADP DET NOUN DET NOUN AUX PART VERB DET ADJ NOUN ADP DET NOUN PUNCT,entity entity O O O O O O entity O O O O relationship O O O O O entity O
+Cinemas are composed of several rooms.,PROPN AUX VERB ADP ADJ NOUN PUNCT,entity O relationship O O entity O
+Films are shown in theaters.,NOUN AUX VERB ADP NOUN PUNCT,entity O relationship O entity O
+A house may have any number of pets living in it.,DET NOUN AUX VERB DET NOUN ADP NOUN VERB ADP PRON PUNCT,O entity O O O O O entity O O O O
+The two possible types of pets that can live in a house are dogs and cats.,DET NUM ADJ NOUN ADP NOUN PRON AUX VERB ADP DET NOUN AUX NOUN CCONJ NOUN PUNCT,O O O O O entity O O relationship O O entity O entity O entity O
+Each dog or cat has a name.,DET NOUN CCONJ NOUN VERB DET NOUN PUNCT,O entity O entity O O attr O
+An animal’s house is its one and only home.,DET NOUN PART NOUN AUX PRON NUM CCONJ ADJ NOUN PUNCT,O O O entity O O O O O O O
+A real estate agency lists a number of properties of different types for sale.,DET ADJ NOUN NOUN VERB DET NOUN ADP NOUN ADP ADJ NOUN ADP NOUN PUNCT,O O O entity O O O O entity O O O O O O
+"The maximum number of properties the
+agency can handle at a given time is 100.
+",DET ADJ NOUN ADP NOUN DET SPACE NOUN AUX VERB ADP DET VERB NOUN AUX NUM PUNCT SPACE,O O O O entity O O entity O O O O O O O O O O
+"All property entries show the property area in m2
+, number of rooms, neighborhood name, and price.
+",DET NOUN NOUN VERB DET NOUN NOUN ADP PROPN SPACE PUNCT NOUN ADP NOUN PUNCT NOUN NOUN PUNCT CCONJ NOUN PUNCT SPACE,O entity O O O entity attr O O O O O O attr O O O O O attr O O
+"Description of each of the types of listed properties include:
+Villa: has a swimming pool or not, and number of adjacent streets
+Apartment: on which floor?",NOUN ADP PRON ADP DET NOUN ADP VERB NOUN VERB PUNCT SPACE PROPN PUNCT VERB DET NOUN NOUN CCONJ PART PUNCT CCONJ NOUN ADP ADJ NOUN SPACE NOUN PUNCT ADP DET NOUN PUNCT,O O O O O O O O entity relationship O O entity O O O O O O O O O O O O O O entity O O O attr O
+"and is there a parking lot?
+",CCONJ AUX PRON DET NOUN NOUN PUNCT SPACE,O O O O attr O O O
+"A company offers several trains.
+",DET NOUN VERB ADJ NOUN PUNCT SPACE,O entity relationship O entity O O
+"A train is closed or open for reservation.
+",DET NOUN AUX ADJ CCONJ ADJ ADP NOUN PUNCT SPACE,O entity O relationship O relationship O entity O O
+"A customer can book one or more trains.
+",DET NOUN AUX VERB NUM CCONJ ADJ NOUN PUNCT SPACE,O entity O O O O O entity O O
+"Each reservation concerns a single passenger and a single train.
+",DET NOUN VERB DET ADJ NOUN CCONJ DET ADJ NOUN PUNCT SPACE,O entity relationship O O entity O O O entity O O
+"Two states for a reservation: either canceled or confirmed.
+",NUM NOUN ADP DET NOUN PUNCT CCONJ VERB CCONJ VERB PUNCT SPACE,O O O O entity O O O O O O O
+"A train has an arrival station or a departure station.
+",DET NOUN VERB DET NOUN NOUN CCONJ DET NOUN NOUN PUNCT SPACE,O entity relationship O O entity O O attr entity O O
+"A train has a departure day, a departure time, and an arrival time.
+",DET NOUN VERB DET NOUN NOUN PUNCT DET NOUN NOUN PUNCT CCONJ DET NOUN NOUN PUNCT SPACE,O entity relationship O attr O O O attr O O O O O O O O
+"A train may include stops at stations.
+",DET NOUN AUX VERB NOUN ADP NOUN PUNCT SPACE,O entity O relationship entity O O O O
+"A stop has a departure time and an arrival time.
+",DET NOUN VERB DET NOUN NOUN CCONJ DET NOUN NOUN PUNCT SPACE,O entity relationship O attr O O O O O O O
+"Each station organizes trips to one or more cities.
+",DET NOUN VERB NOUN ADP NUM CCONJ ADJ NOUN PUNCT SPACE,O entity relationship O O O O O entity O O
+"A station has a name, organizes trips to several cities.
+",DET NOUN VERB DET NOUN PUNCT VERB NOUN ADP ADJ NOUN PUNCT SPACE,O entity relationship O attr O relationship O O O entity O O
+"a station has a name.
+",DET NOUN VERB DET NOUN PUNCT SPACE,O entity relationship O attr O O
+"a customer or passenger has a surname, first name, address and telephone number.
+",DET NOUN CCONJ NOUN VERB DET NOUN PUNCT ADJ NOUN PUNCT NOUN CCONJ NOUN NOUN PUNCT SPACE,O entity O entity relationship O attr O O attr O attr O O O O O
+"a company has a name.
+",DET NOUN VERB DET NOUN PUNCT SPACE,O entity relationship O attr O O
+"a stop and linked to a departure time and an arrival time.
+",DET NOUN CCONJ VERB ADP DET NOUN NOUN CCONJ DET NOUN NOUN PUNCT SPACE,O entity O O O O attr O O O O O O O
+"a city has a name.
+",DET NOUN VERB DET NOUN PUNCT SPACE,O entity relationship O attr O O
+"a train has an identifier, a departure and arrival date, a departure and arrival time.",DET NOUN VERB DET NOUN PUNCT DET NOUN CCONJ NOUN NOUN PUNCT DET NOUN CCONJ NOUN NOUN PUNCT,O entity relationship O attr O O attr O O O O O attr O O O O
+An employee takes care of registering the loans of members who want to borrow the CD-ROMs.,DET NOUN VERB NOUN ADP VERB DET NOUN ADP NOUN PRON VERB PART VERB DET NOUN PUNCT NOUN PUNCT,O entity O O O relationship O O O entity O O O relationship O O O O O
+The employee must first authenticate to perform this operation.,DET NOUN AUX ADV VERB PART VERB DET NOUN PUNCT,O entity O O O O O O O O
+must be returned to the library employee after a period of 3 days.,AUX AUX VERB ADP DET NOUN NOUN ADP DET NOUN ADP NUM NOUN PUNCT,O O O O O O entity O O O O O O O
+"The member can therefore reserve CD-ROMs containing games, each reservation must mention the borrower, the game and the date of reservation.",DET NOUN AUX ADV VERB PROPN PUNCT NOUN VERB NOUN PUNCT DET NOUN AUX VERB DET NOUN PUNCT DET NOUN CCONJ DET NOUN ADP NOUN PUNCT,O entity O O relationship O O O O entity O O entity O O O attr O O attr O O attr O entity O
+"The member is notified when the game (cd) returns to the shelves.
+",DET NOUN AUX VERB SCONJ DET NOUN PUNCT PROPN PUNCT VERB ADP DET NOUN PUNCT SPACE,O entity O O O O attr O O O O O O O O O
+"The employee can also organize events, to do so he must provide the following information: the minimum and maximum number of participants, the games to be tested, the date of the event and the start time of the event.
+",DET NOUN AUX ADV VERB NOUN PUNCT PART VERB ADV PRON AUX VERB DET VERB NOUN PUNCT DET ADJ CCONJ ADJ NOUN ADP NOUN PUNCT DET NOUN PART AUX VERB PUNCT DET NOUN ADP DET NOUN CCONJ DET ADJ NOUN ADP DET NOUN PUNCT SPACE,O entity O O relationship entity O O O O O O O O O O O O O O O O O O O O entity O O relationship O O attr O O entity O O O O O O entity O O
+The member who wishes to participate in an event can register provided that there is still space available.,DET NOUN PRON VERB PART VERB ADP DET NOUN AUX VERB VERB SCONJ PRON VERB ADV NOUN ADJ PUNCT,O entity O O O relationship O O entity O O O O O O O O O O
+If the member finds an available place then he can pay his subscription online by an external payment system.,SCONJ DET NOUN VERB DET ADJ NOUN ADV PRON AUX VERB PRON NOUN ADV ADP DET ADJ NOUN NOUN PUNCT,O O entity O O O O O O O relationship O entity O O O O O O O
+"A token-ring based local-area-network (LAN) is a network consisting of nodes, in which network packets are sent around.",DET ADJ PUNCT NOUN VERB ADJ PUNCT NOUN PUNCT NOUN PUNCT PROPN PUNCT AUX DET NOUN VERB ADP NOUN PUNCT ADP PRON NOUN NOUN AUX VERB ADV PUNCT,O O O O O O O O O entity O entity O O O entity O O entity O O O entity entity O O O O
+"Every node has a unique name within the network, and refers to its next node.",DET NOUN VERB DET ADJ NOUN ADP DET NOUN PUNCT CCONJ VERB ADP PRON ADJ NOUN PUNCT,O entity O O O attr O O entity O O O O O relationship entity O
+Different kinds of nodes exist: workstations are originators of messages; servers and printers are network nodes that can receive messages.,ADJ NOUN ADP NOUN VERB PUNCT NOUN AUX NOUN ADP NOUN PUNCT NOUN CCONJ NOUN AUX NOUN NOUN PRON AUX VERB NOUN PUNCT,O O O entity O O entity O O O O O entity O entity O entity entity O O O O O
+"Packets contain an originator, a destination and content, and are sent around on a network.",NOUN VERB DET NOUN PUNCT DET NOUN CCONJ NOUN PUNCT CCONJ AUX VERB ADP ADP DET NOUN PUNCT,entity O O attr O O attr O attr O O O O O O O entity O
+A LAN is a circular configuration of nodes.,DET PROPN AUX DET ADJ NOUN ADP NOUN PUNCT,O entity O O O O O entity O
+Each document is composed of one or more sheets.,DET NOUN AUX VERB ADP NUM CCONJ ADJ NOUN PUNCT,O entity O relationship O O O O entity O
+"A sheet contains text and geometrical objects which constitute two types of graphic objects supporting operations such as: select, copy, cut, paste and move. 
+",DET NOUN VERB NOUN CCONJ ADJ NOUN PRON VERB NUM NOUN ADP ADJ NOUN VERB NOUN ADJ ADP PUNCT ADJ PUNCT NOUN PUNCT VERB PUNCT VERB CCONJ NOUN PUNCT SPACE,O entity relationship entity O O O O O O O O O O O O O O O O O O O O O O O O O O
+"We consider the following four geometric objects: circle, ellipse, square, rectangle.",PRON VERB DET VERB NUM ADJ NOUN PUNCT NOUN PUNCT NOUN PUNCT ADJ PUNCT NOUN PUNCT,O O O O O O O O entity O entity O entity O entity O
