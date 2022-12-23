@@ -1,6 +1,7 @@
 import spacy
 from pyUML import Graph, UMLClass
 
+spacy.cli.download("en_core_web_sm")
 nlp = spacy.load("en_core_web_sm")
 
 deps_attr = ["pobj", "dobj", "conj"]
@@ -71,7 +72,6 @@ def get_all_children_of_root(root, level):
     return children
     
 def get_relationships(text, classes, inheritances):
-    # subjects_of_root_dep = ["nsubjpass", "nsubj"]
     relationships = set()
     doc = nlp(text)
     for sent in doc.sents:
@@ -93,15 +93,6 @@ def get_relationships(text, classes, inheritances):
                         # skip if the relationship is an inheritance
                         if (rel[0], rel[2]) not in inheritances and (rel[2], rel[0]) not in inheritances:
                             relationships.add(rel)
-            
-            # # ex : Departments are located "in" offices
-            # if children[-2].pos_ == "ADP" and list(children[-2].children):
-            #     adp_children = list(children[i].children)
-            #     root = children[i].head
-            #     subjects = [tok for tok in sent if (tok.dep_ in subjects_of_root_dep) and (tok.head == root)]
-            #     for obj in adp_children:
-            #         if obj.lemma_ in classes and subjects:
-            #             relationships.add((subjects[0].lemma_, sent.root.text + " " + children[-2].text, obj.lemma_))
     return relationships
 
 def get_inheritance(text, classes):

@@ -3,7 +3,7 @@ import os
 import uuid
 from functions import *
 
-st.title("Text to UML Diagram Generator")
+st.title("Text to UML Diagram Generator with spaCy POS and Dependency Parsing")
 
 text = st.text_area("Write your specification here", height=200)
 btn = st.button("Generate")
