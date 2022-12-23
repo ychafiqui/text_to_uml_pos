@@ -1,7 +1,7 @@
 import spacy
 from pyUML import Graph, UMLClass
 
-spacy.cli.download("en_core_web_sm")
+# spacy.cli.download("en_core_web_sm")
 nlp = spacy.load("en_core_web_sm")
 
 deps_attr = ["pobj", "dobj", "conj"]
@@ -95,16 +95,35 @@ def get_relationships(text, classes, inheritances):
                             relationships.add(rel)
     return relationships
 
+def get_children_recursively(root, children):
+    for child in root.children:
+        if child.dep_ == "conj":
+            children.append(child.lemma_)
+            children = get_children_recursively(child, children)
+    return children
+
 def get_inheritance(text, classes):
     inheritances = set()
     doc = nlp(text)
     for sent in doc.sents:
+        children = list(sent.root.children)
         if sent.root.lemma_ == "be":
-            children = list(sent.root.children)
-            for i in range(len(children)):
-                for j in range(i+1, len(children)):
-                    if children[i].lemma_ in classes and children[j].lemma_ in classes:
-                        inheritances.add((children[i].lemma_, children[j].lemma_))
+            if "can" in [child.lemma_ for child in children]:
+                parent = ""
+                enfants = []
+                for child in children:
+                    if child.dep_ == "nsubj":
+                        parent = child.lemma_
+                    elif child.dep_ == "attr":
+                        enfants.append(child.lemma_)
+                        get_children_recursively(child, enfants)
+                for enfant in enfants:
+                    inheritances.add((enfant, parent))
+            else:
+                for i in range(len(children)):
+                    for j in range(i+1, len(children)):
+                        if children[i].lemma_ in classes and children[j].lemma_ in classes:
+                            inheritances.add((children[i].lemma_, children[j].lemma_))
     return inheritances
 
 def get_attribute_type(attribute):

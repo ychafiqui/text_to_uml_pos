@@ -2,7 +2,6 @@ Customers are identified by name and address.
 Each customer has an account. Each account has a balance.
 A savings account offers an interest rate.
 An investment account can buy stocks.
-An investment account is an account.
-A savings account is an account.
+Each account can either be a savings account or investment account.
 Stocks are bought at a certain quantity for a certain price (ticker).
 Stock orders have commission applied by the bank.

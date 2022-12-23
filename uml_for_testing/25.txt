@@ -1,0 +1,5 @@
+In a university there are classrooms, offices and departments. A department has a name, and it contains many offices. A person working at the university has a unique ID and can be a professor or an employee.
+A person can either be a professor or an employee.
+A professor can be a full professor, associate professor or assistant professor.
+Offices and classrooms have a number ID, and a classroom has a number of seats.
+Every employee works in an office.
