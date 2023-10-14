@@ -48,11 +48,11 @@ six==1.16.0
 smart-open==6.2.0
 smmap==5.0.0
 spacy
-spacy-legacy==3.0.10
-spacy-loggers==1.0.4
+spacy-legacy
+spacy-loggers
 spacy-streamlit
 srsly==2.4.5
-streamlit==1.15.2
+streamlit
 thinc==8.1.5
 toml==0.10.2
 toolz==0.12.0
