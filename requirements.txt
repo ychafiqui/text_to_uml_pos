@@ -97,7 +97,6 @@ feedfinder2==0.0.4
 feedparser==6.0.10
 filelock==3.10.0
 filetype==1.2.0
-Fiona==1.9.4.post1
 Flask==2.3.2
 flatbuffers==23.3.3
 flower==1.2.0
@@ -251,8 +250,6 @@ pyLDAvis==3.4.0
 pymdown-extensions==10.3
 Pympler==1.0.1
 pyparsing==3.0.9
-pyproj==3.6.1
-pyresparser==1.0.6
 pyrsistent==0.19.3
 PySocks==1.7.1
 python-dateutil==2.8.2
