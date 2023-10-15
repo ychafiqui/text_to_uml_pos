@@ -138,7 +138,7 @@ httpcore==0.9.1
 huggingface-hub==0.16.4
 humanize==4.6.0
 hyperframe==5.2.0
-idna==3.4
+idna
 imbalanced-learn==0.10.1
 importlib-metadata==6.5.0
 inflection==0.5.1
